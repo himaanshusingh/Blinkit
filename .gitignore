@@ -1,0 +1,2 @@
+We create this file to add some files so that git can't access those files.
+.env
