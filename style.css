@@ -71,13 +71,49 @@ header {
   margin: 14px 0px;
   stroke-width: 5px;
 }
-.mid-header > .mid-header-content > input {
+.mid-header > .mid-header-content > .search-bar {
   width: 648px;
   height: 46px;
   border: none;
   font-size: 16px;
   background-color: #f7f7f7;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
 }
+.search-bar > ul {
+  list-style-type: none;
+}
+.search-bar > ul > li {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  animation: word-carousel 10s infinite;
+
+  color: rgb(153, 153, 153);
+}
+/* prettier-ignore */
+@keyframes word-carousel {
+  0% {
+    transform: translateY(100%);
+  }
+  4%, 20% {
+    transform: translateY(-0%);
+  }
+  24%, 40% {
+    transform: translateY(-100%);
+  }
+  44%, 60% {
+    transform: translateY(-200%);
+  }
+  64%, 80% {
+    transform: translateY(-300%);
+  }
+  84%, 100% {
+    transform: translateY(-400%);
+  }
+}
+
 .right-header {
   display: flex;
   flex-flow: row wrap;
